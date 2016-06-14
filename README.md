@@ -24,6 +24,18 @@
 
 ## Module Patters in ES5
 
+Revealing Module pattern
+
+- Singletons
+- Constructor functions
+
+### Reducing Global Scope Pollution
+
+> **IIFE**: Immediately Invoked Function Expression.
+
+They provide *encapsulation* and reduce global scope pollution.
+
+But **No dependency management**. 
 
 ## Module Formats and Loaders
 
