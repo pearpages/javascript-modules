@@ -1,4 +1,4 @@
-define(['./models/car','./models/driver'],function(Car,Driver) {
+define(['./models/Car','./models/Driver'],function(Car,Driver) {
     
     var car1 = new Car('Ferrari','dkd35123');
     var car2 = new Car('Lamborghini','1234XYZ');
