@@ -22,14 +22,9 @@
 - npm
 - npm packages
 
-## Module Patters in ES5
+## Module Patterns in ES5
 
-Revealing Module pattern
-
-- Singletons
-- Constructor functions
-
-### Reducing Global Scope Pollution
+### IIFE
 
 > **IIFE**: Immediately Invoked Function Expression.
 
@@ -38,8 +33,45 @@ They provide *encapsulation* and reduce global scope pollution.
 But **No dependency management**. 
 
 ```javascript
-
+(function (name){
+    console.log('Hello '+name);
+})('Pere Pages');
 ```
+
+### Revealing Module pattern
+
+- Function scoping provides encapsulation
+- Adds one value to global scopoe per module
+- Clear delineation between private implementation and public API
+- **NO dependency management**
+- Puere javascript that works in modern browsers
+- Comes in two popular flavors
+  - Singleton
+  - Constructor function
+
+#### Singleton
+
+```javascript
+var scoreboard = function() {
+    
+    // private variables
+    var whatever = 'whatever';
+    
+    return {
+      showMessage: showMessage  
+    };
+    
+    function showMessage(message) {
+        console.log(message);
+    }
+}();
+
+scoreboard.showMessage('Hello me!!');
+```
+
+#### Constructor Function
+
+
 
 ## Module Formats and Loaders
 
