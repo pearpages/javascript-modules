@@ -95,6 +95,41 @@ var Scoreboard = function () {
 
 ## Module Formats and Loaders
 
+### Formats vs Loaders
+
+**Module Format** --> Syntax
+
+- AMD
+- COmmonJS
+- UMD
+
+**Loader** --> Execution
+
+### AMD (Asynchronous Module Definition)
+
+Loaders
+
+- RequireJS
+- Curl.js
+- SystemJS
+
+The AMD syntax is defined for modules that will be loaded in a browser.
+
+### CommonJS
+
+CommonJS syntax is used for **Server-side** development, but we can use in the browser with module loaders like **SystemJS**.
+
+### UMD (Universal Module Definition)
+
+It is supposed to be used for Browser and Server-side modules. But usually it is only used by **transpilers**. If we are using *Typescript*, for instance, we can tell the compiler/transpiler to use this syntax.
+
+### System.register
+
+System.register can be considered as a new module format designed to support the exact semantics of ES6 modules within ES5.
+
+### ES2015 module format
+
+Built-in support for modules. We need to *transpile* so we get the code in any of the previous syntaxes (CommonJS, UMD, System.register)
 
 ## Modules in ES2015
 
