@@ -1,0 +1,22 @@
+{
+  "name": "javascript-modules",
+  "version": "1.0.0",
+  "description": "- AMD\r - CommonJS\r - Client-side module loaders\r - ES2015 (aka Harmonky, aka ES6)\r - Module bundlers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pearpages/javascript-modules.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pearpages/javascript-modules/issues"
+  },
+  "homepage": "https://github.com/pearpages/javascript-modules#readme",
+  "dependencies": {
+    "requirejs": "^2.2.0"
+  }
+}

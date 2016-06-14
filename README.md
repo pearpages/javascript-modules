@@ -93,7 +93,7 @@ var Scoreboard = function () {
 })();
 ```
 
-## Module Formats and Loaders
+## Module Formats
 
 ### Formats vs Loaders
 
@@ -115,6 +115,24 @@ Loaders
 
 The AMD syntax is defined for modules that will be loaded in a browser.
 
+The *define* function is part from the loader. 
+
+```javascript
+// we have the dependencies and the module inside the function
+// the dependencies are relative to the file
+// the dependencies are injected as parameters
+define(['./player'],function(player) {
+    
+    return {
+        calculateScore: calculateScore
+    };
+    
+    function calculateScore() {
+        // calculate the score here
+    }
+});
+```
+
 ### CommonJS
 
 CommonJS syntax is used for **Server-side** development, but we can use in the browser with module loaders like **SystemJS**.
@@ -130,6 +148,77 @@ System.register can be considered as a new module format designed to support the
 ### ES2015 module format
 
 Built-in support for modules. We need to *transpile* so we get the code in any of the previous syntaxes (CommonJS, UMD, System.register)
+
+## Module Loaders
+
+- RequireJS (AMD)
+- SystemJS (AMD, CommonJS, UMD, System.register)
+
+### RequireJS
+
+```bash
+npm install requirejs --save
+```
+
+```javascript
+define([],function() {
+    
+    // private members
+    var playerName = '';
+    
+    return {
+        logPlayer: logPlayer,
+        setName: setName,
+        getName: getName
+    }
+    
+    function logPlayer() {
+        console.log('The current player is ' + playerName + '.');
+    }
+    
+    function setName(newName) {
+        playerName = newName;
+    }
+    
+    function getName() {
+        return playerName;
+    }
+});
+```
+
+```javascript
+// game.js
+define(['./player','./game'], function(Player,Game) {
+    
+    // private members
+    var player = new Player();
+    var game = new Game();
+    
+    return {
+        getPlayer: getPlayer,
+        getGame: getGame
+    }
+    
+    function getPlayer() {
+        return player;
+    }
+    
+    function getGame() {
+        return game;
+    }
+});
+```
+
+In the index.html
+
+```html
+<html>
+    <header></header>
+    <body>
+        <script data-main="js/app" src="node_modules/requirejs/require.js"></script>
+    </body>
+</html>
+```
 
 ## Modules in ES2015
 
