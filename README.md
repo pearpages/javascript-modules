@@ -268,7 +268,30 @@ function updateScoreboard() {
 }
 ```
 
+### SystemJS in the index.html
+
+The ```format: 'cjs'``` stands for commonJS.
+
+```html
+<html>
+    <header></header>
+    <body>
+        <script src="node_modules/systemjs/dist/system.js"></script>
+        <script>
+            System.config({
+                meta: {
+                    format: 'cjs'
+                }
+            });
+            System.import('js/app.js');
+        </script>
+        <div id="main"></div>
+    </body>
+</html>
+```
+
 ## Modules in ES2015
+
 
 
 ## Module Bundlers
