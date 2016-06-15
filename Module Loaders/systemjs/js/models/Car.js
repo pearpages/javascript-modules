@@ -1,4 +1,4 @@
-module.exports = function (model,serialNumber) {
+export default function Car(model,serialNumber) {
 
     var model = model;
     var serialNumber = serialNumber;
@@ -15,5 +15,4 @@ module.exports = function (model,serialNumber) {
         html.push('<p>Serial Number: '+serialNumber+'</p>');
         return html.join('');
     }
-};
-
+}
