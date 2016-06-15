@@ -292,7 +292,17 @@ The ```format: 'cjs'``` stands for commonJS.
 
 ## Modules in ES2015
 
+They are Native modules, but we currenty need to *transpile* them.
 
+- Support for dependency management
+- Encapsulate implementation details
+- Explicitly expose public API
+
+### Module Workflow
+
+```
+ES2015 Modules -> Transpile (Babel) -> AMD, CommonJS, etc. -> RequireJS, SystemJS, etc.
+```
 
 ## Module Bundlers
 
