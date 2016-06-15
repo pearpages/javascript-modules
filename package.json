@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pearpages/javascript-modules#readme",
   "dependencies": {
-    "requirejs": "^2.2.0"
+    "requirejs": "^2.2.0",
+    "systemjs": "^0.19.31"
   }
 }

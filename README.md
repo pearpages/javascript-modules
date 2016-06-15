@@ -220,6 +220,40 @@ In the index.html
 </html>
 ```
 
+### CommonJS
+
+Each file is a module. We don't need to wrap the file inside a function. 
+
+#### Export Syntax
+
+```
+module.exports === exports
+// exports it's just a shortcut
+
+exports.calculateScore = calculateScore;
+
+// is equivalent to
+
+module.exports.calculateScore = calculateScore;
+```
+
+We cannot do
+
+```javascript
+// we cannot do
+exports = {};
+exports = function() {};
+```
+
+```javascript
+// but we can do
+module.exports = {};
+module.exports = function () {};
+```
+
+```javascript
+```
+
 ## Modules in ES2015
 
 
