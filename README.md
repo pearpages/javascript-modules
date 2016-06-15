@@ -251,7 +251,21 @@ module.exports = {};
 module.exports = function () {};
 ```
 
+### Defining an API
+
 ```javascript
+module.exports = {
+    addResult: addResult,
+    updateScoreboard: updateScoreboard
+};
+
+function addResult() {
+    // code...
+}
+
+function updateScoreboard() {
+    // code ...
+}
 ```
 
 ## Modules in ES2015
