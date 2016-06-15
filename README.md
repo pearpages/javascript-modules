@@ -377,5 +377,12 @@ import {updateScoreboard as update} from './scoreboard.js';
 import newResult from './scoreboard.js';
 ```
 
+```javascript
+// importing default and what's needed
+import newResult, { updateScoreboard } from './scoreboard.js';
+```
+
+
+
 ## Module Bundlers
 
