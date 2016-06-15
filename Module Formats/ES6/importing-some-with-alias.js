@@ -1,0 +1,1 @@
+import {updateScoreboard as update} from './scoreboard.js';

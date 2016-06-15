@@ -1,0 +1,1 @@
+import {addResult, updateScoreboard} from './scoreboard.js';

@@ -1,0 +1,1 @@
+import newResult from './scoreboard.js';

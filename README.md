@@ -304,5 +304,78 @@ They are Native modules, but we currenty need to *transpile* them.
 ES2015 Modules -> Transpile (Babel) -> AMD, CommonJS, etc. -> RequireJS, SystemJS, etc.
 ```
 
+### Importing and Exporting
+
+#### Importing
+
+- Imported items are dependencies
+- May import an entire module or just part of it
+- May create an *alias* for imported items
+
+#### Exporting
+
+- Exposes the API of the module
+- May export items at declaration or all at once as a list
+- May specify a *default* export
+
+### Exporting
+
+```javascript
+export function addResult(newResult) {
+    // add new result to the list
+}
+
+export function updateScoreboard() {
+    // update the scoreboard here
+}
+
+function somePrivateFunction() {
+    // not part of the API
+}
+
+export var homeTeam = 'Tigers';
+```
+
+```javascript
+export {addResult, updateScoreboard as show, homeTeam};
+
+function default addResult(newResult) {
+    // add new result to the list
+}
+
+function updateScoreboard() {
+    // update the scoreboard here
+}
+
+function somePrivateFunction() {
+    // not part of the API
+}
+
+var homeTeam = 'Tigers';
+```
+
+### Importing
+
+```javascript
+// importing everything
+import * as scoreboard from './scoreboard.js';
+scoreboard.updateScoreboard();
+```
+
+```javascript
+// importing what's needed
+import {addResult, updateScoreboard} from './scoreboard.js';
+```
+
+```javascript
+// importing with alias
+import {updateScoreboard as update} from './scoreboard.js';
+```
+
+```javascript
+// importing the default
+import newResult from './scoreboard.js';
+```
+
 ## Module Bundlers
 
