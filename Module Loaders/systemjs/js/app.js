@@ -1,5 +1,5 @@
-var Car = require('./models/Car');
-var Driver = require('./models/Driver');
+var Car = require('./models/Car.js');
+var Driver = require('./models/Driver.js');
 
 var car1 = new Car('Ferrari', 'dkd35123');
 var car2 = new Car('Lamborghini', '1234XYZ');
