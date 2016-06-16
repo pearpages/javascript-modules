@@ -1,22 +1,18 @@
-define([], function () {
+export function Car(model, serialNumber) {
 
-    return function (model,serialNumber) {
+    var model = model;
+    var serialNumber = serialNumber;
 
-        var model = model;
-        var serialNumber = serialNumber;
+    var self = this;
 
-        var self = this;
+    self.getModel = function () { return model; };
+    self.getSerialNumber = function () { return serialNumber; };
+    self.getHtmlDescription = getHtmlDescription;
 
-        self.getModel = function() { return model; }; 
-        self.getSerialNumber = function() { return serialNumber; }; 
-        self.getHtmlDescription = getHtmlDescription;
-        
-        function getHtmlDescription() {
-            var html = [];
-            html.push('<p>Model: '+model+'</p>');
-            html.push('<p>Serial Number: '+serialNumber+'</p>');
-            return html.join('');
-        }
-    };
-
-});
+    function getHtmlDescription() {
+        var html = [];
+        html.push('<p>Model: ' + model + '</p>');
+        html.push('<p>Serial Number: ' + serialNumber + '</p>');
+        return html.join('');
+    }
+};

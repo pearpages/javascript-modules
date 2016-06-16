@@ -381,6 +381,7 @@ import newResult from './scoreboard.js';
 // importing default and what's needed
 import newResult, { updateScoreboard } from './scoreboard.js';
 ```
+### Babel
 
 
 
