@@ -4,7 +4,8 @@
   "description": "For seeing the example, run it as a webpage using this foolder as the root folder. You can use **http-server** for example.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/babel js --presets es2015 --out-dir build"
   },
   "author": "",
   "license": "ISC",

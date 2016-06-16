@@ -399,5 +399,22 @@ Babel will transpile the code from ES6 to ES5, but then we will still need a **M
 npm install --save-dev babel-cli babel-preset-es2015
 ```
 
+#### Running Babel
+
+We can run it from the shell
+
+```bash
+./node_modules/.bin/babel js --presets es2015 --out-dir build
+```
+
+Or we can create a script in package.json
+
+```json
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/babel js --presets es2015 --out-dir build"
+}
+```
+
 ## Module Bundlers
 
