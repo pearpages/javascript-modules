@@ -448,3 +448,6 @@ AMD, CommonJS, ES2015 Modules -> Bundler -> bundle.js -> Browser
 - Bundles CommonJS modules
 - Easy to use
 
+```bash
+npm install -g browserify --save
+```
