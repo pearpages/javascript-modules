@@ -381,6 +381,7 @@ import newResult from './scoreboard.js';
 // importing default and what's needed
 import newResult, { updateScoreboard } from './scoreboard.js';
 ```
+
 ### Babel
 
 > [Babel](https://babeljs.io) is a Transpiler
@@ -392,8 +393,10 @@ import newResult, { updateScoreboard } from './scoreboard.js';
 - Highly configurable
 - Supports all of the popular module formats
 
+Babel will transpile the code from ES6 to ES5, but then we will still need a **Module Loader**!
+
 ```bash
-npm install --save-dev babel-cli
+npm install --save-dev babel-cli babel-preset-es2015
 ```
 
 ## Module Bundlers
