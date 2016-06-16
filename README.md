@@ -422,7 +422,7 @@ In the example Babel transpiles to CommonJS modules. I use SystemJS as Module Lo
 
 They do the same as Module Loaders but at build time instead of run time.
 
-- Browserify
+- [Browserify](http://browserify.org)
 - Webpack
 
 The Role of a Module Bundler
@@ -440,3 +440,11 @@ Build step.
 ```
 AMD, CommonJS, ES2015 Modules -> Bundler -> bundle.js -> Browser
 ```
+
+### Browserify
+
+> Attemps to make *Node.js* modules available for browser apps.
+
+- Bundles CommonJS modules
+- Easy to use
+
