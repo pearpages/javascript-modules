@@ -453,6 +453,7 @@ npm install browserify --save
 ```
 
 ```bash
+# we have to manually create the build folder
 ./node_modules/.bin/browserify js/app.js --outfile build/bundle.js
 ```
 
@@ -465,4 +466,8 @@ npm install browserify --save
 
 ```bash
 npm install webpack --save-dev
+```
+
+```bash
+./node_modules/.bin/webpack js/app.js build/bundle.js
 ```
