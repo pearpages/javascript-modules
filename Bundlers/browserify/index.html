@@ -1,0 +1,17 @@
+<html>
+    <header></header>
+    <body>
+        <script src="node_modules/systemjs/dist/system.js"></script>
+        
+        <script>
+            System.config({
+                meta: {
+                    format: 'cjs'
+                }
+            });
+            System.import('./build/app.js');
+        </script>
+        
+        <div id="main"></div>
+    </body>
+</html>
