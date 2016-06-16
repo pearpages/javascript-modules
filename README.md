@@ -416,5 +416,7 @@ Or we can create a script in package.json
 }
 ```
 
+In the example Babel transpiles to CommonJS modules. I use SystemJS as Module Loader.
+
 ## Module Bundlers
 
