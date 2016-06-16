@@ -463,3 +463,6 @@ npm install browserify --save
 - Bundles more than just Javascript modules
 - Uses "loaders" for transformation before bundling
 
+```bash
+npm install webpack --save-dev
+```
