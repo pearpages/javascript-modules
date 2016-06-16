@@ -383,7 +383,18 @@ import newResult, { updateScoreboard } from './scoreboard.js';
 ```
 ### Babel
 
+> [Babel](https://babeljs.io) is a Transpiler
 
+- Transpiler
+- Supports most ES2015 features
+- Executed as a build step
+- Produces clean, readable JavaScript
+- Highly configurable
+- Supports all of the popular module formats
+
+```bash
+npm install --save-dev babel-cli
+```
 
 ## Module Bundlers
 
