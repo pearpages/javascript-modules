@@ -449,9 +449,17 @@ AMD, CommonJS, ES2015 Modules -> Bundler -> bundle.js -> Browser
 - Easy to use
 
 ```bash
-npm install -g browserify --save
+npm install browserify --save
 ```
 
 ```bash
 ./node_modules/.bin/browserify js/app.js --outfile build/bundle.js
 ```
+
+### Webpack
+
+- Bundles AMD, CommonJS, and ES2015 modules
+- Code splitting
+- Bundles more than just Javascript modules
+- Uses "loaders" for transformation before bundling
+
