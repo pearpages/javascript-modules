@@ -1,4 +1,4 @@
-export default function Driver(name, yearsOfExperience) {
+module.exports = function (name, yearsOfExperience) {
     var name = name;
     var yearsOfExperience = yearsOfExperience;
 

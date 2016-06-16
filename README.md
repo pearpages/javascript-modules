@@ -412,7 +412,7 @@ Or we can create a script in package.json
 ```json
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/babel js --presets es2015 --out-dir build"
+    "build": "./node_modules/.bin/babel js --presets es2015 --out-dir build"
 }
 ```
 
@@ -450,4 +450,8 @@ AMD, CommonJS, ES2015 Modules -> Bundler -> bundle.js -> Browser
 
 ```bash
 npm install -g browserify --save
+```
+
+```bash
+./node_modules/.bin/browserify js/app.js --outfile build/bundle.js
 ```
