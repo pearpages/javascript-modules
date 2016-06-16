@@ -471,3 +471,31 @@ npm install webpack --save-dev
 ```bash
 ./node_modules/.bin/webpack js/app.js build/bundle.js
 ```
+
+```bash
+npm install --save-dev babel-cli babel-core babel-loader
+```
+
+#### webpack.config.js
+
+The file is pertty autodescriptive.
+
+```javascript
+module.exports = {
+    entry: './js/app.js',
+    output: {
+        path: './build',
+        filename: 'bundle.js'
+    },
+    module: {
+        loaders: [{
+            test: /\.js$/,
+            exlcude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+                presets: ['es2015']
+            }
+        }]
+    }
+};
+```
